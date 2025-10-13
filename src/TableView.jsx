@@ -31,22 +31,6 @@ export default function TableView() {
 }, []);
 
 
-{/*useEffect(() => {
-    // static test data
-    const testData = [
-      { id: 1, name: "Robert BSD", type: "Outgoing Call" },
-      { id: 2, name: "Benedikt Bartsch", type: "Missed Call" },
-    ];
-
-    setRows(testData);
-
-    setColumns([
-      { field: "id", headerName: "ID", width: 100 },
-      { field: "name", headerName: "Name", width: 200, editable: true },
-      { field: "type", headerName: "Type", width: 200, editable: true },
-    ]);
-  }, []);*/}
-
   const handleCellEditCommit = (params) => {
     alert(1);
     const updatedRows = rows.map((row) =>
